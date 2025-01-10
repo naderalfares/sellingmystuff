@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+.item-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+.item-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.item-card img {
+    max-width: 100%;
+    height: auto;
+}
+.item-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.item-detail {
+    padding: 1rem;
+    text-align: center;
+}

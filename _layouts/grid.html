@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="grid">
+    {% for item in site.items %}
+    <div class="item-card">
+        <a href="{{ item.url }}">
+            <img src="{{ item.image }}" alt="{{ item.title }}" height="200" width="200">
+            <h2>{{ item.title }}</h2>
+        </a>
+            <h3>{{ item.price }}</h3>
+            <p>{{ item.description}}</p>
+
+    </div>
+    {% endfor %}
+</section>
